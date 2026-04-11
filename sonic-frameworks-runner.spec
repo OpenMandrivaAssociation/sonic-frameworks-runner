@@ -43,7 +43,11 @@ BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(KF6ThreadWeaver)
 BuildRequires: cmake(KF6ItemModels)
 BuildRequires: cmake(KF6Config)
-BuildRequires: cmake(KF6CoreAddons)
+
+# pending rename
+# BuildRequires: cmake(KF6CoreAddons)
+BuildRequires: %{_lib}SonicFrameworksCoreAddons-devel
+
 BuildRequires: cmake(KF6I18n)
 
 # pending rename
