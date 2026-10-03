@@ -79,17 +79,13 @@ Conflicts: %{_lib}KF6Runner-devel
 %description -n %{devname}
 %summary
 
-%install -a 
-rm -rf %{buildroot}/%{_libdir}/cmake
-
 %files
 %{_datadir}/qlogging-categories6/krunner.*
 
 %files -n %{devname}
 %{_includedir}/KF6/KRunner
-
-# pending rename
-# %{_libdir}/cmake/KF6Runner
+%{_libdir}/cmake/KF6Runner
+%{_qtdir}/metatypes/qt6kf6runner_metatypes.json
 
 %{_datadir}/dbus-1/interfaces/kf6_org.kde.krunner1.xml
 %{_datadir}/kdevappwizard/templates/runner6.tar.bz2
